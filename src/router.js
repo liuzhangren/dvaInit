@@ -10,6 +10,9 @@ const Routers = function ({ history, app }) {
       case '/test':
         document.title = '测试'
         break
+      case '/':
+        document.title = '主页'
+        break
       default:
         document.title = 'dva'
         break
@@ -17,6 +20,11 @@ const Routers = function ({ history, app }) {
   })
 
   const routes = [
+    {
+      path: '/',
+      models: () => [import('./models/example')],
+      component: () => import('./routes/IndexPage'),
+    },
     {
       path: '/test',
       models: () => [import('./models/test')],
@@ -31,7 +39,6 @@ const Routers = function ({ history, app }) {
           routes.map(({ path, ...dynamics }, key) => {
             return (
               <Route key={key}
-                     exact={(path.indexOf('/technological') !== -1 || path.indexOf('/teamShow') !== -1 )? false : true}
                      path={path}
                      component={dynamic({
                        app,
