@@ -28,7 +28,7 @@ export default class Test extends React.Component {
             ]
           }, [])
         }
-        <Button onClick={this.click.bind(this)} >点击</Button>
+        <Button type='primary' onClick={this.click.bind(this)} >点击</Button>
       </>
     )
   }

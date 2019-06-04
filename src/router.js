@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Switch, Route, Router } from 'dva/router'
 import dynamic from 'dva/dynamic'
+import 'antd/dist/antd.css'
 
 const Routers = function ({ history, app }) {
   history.listen((location)=>{
@@ -40,6 +41,7 @@ const Routers = function ({ history, app }) {
             return (
               <Route key={key}
                      path={path}
+                     exact={true}
                      component={dynamic({
                        app,
                        ...dynamics,
