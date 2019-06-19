@@ -11,8 +11,12 @@ export default class Test extends React.Component {
 
   click() {
     const { dispatch } = this.props
+    // dispatch({
+    //   type: 'test/fetchTest',
+    //   payload: {}
+    // })
     dispatch({
-      type: 'test/fetchTest',
+      type: 'test/testCors',
       payload: {}
     })
   }

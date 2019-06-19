@@ -1,6 +1,7 @@
 
 import {
-  testRequest
+  testRequest,
+  testCors
 } from '../../services/test'
 
 export default {
@@ -28,8 +29,11 @@ export default {
         })
       }
     },
+    * testCors({payload}, {call, put}) {
+      const res = yield call(testCors)
+      debugger
+    },
   },
-
   reducers: {
     save(state, action) {
       return { ...state, ...action.payload };
