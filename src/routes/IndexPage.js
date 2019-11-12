@@ -61,10 +61,10 @@ export default class Index extends React.Component {
         <ContentTwo />
         <ContentThree />
         <Footer />
-        <div className={style.help} >
+        {/* <div className={style.help} >
           <Icon type="question-circle" />
           &nbsp; 帮助
-        </div>
+        </div> */}
       </div>
     )
   }

@@ -32,6 +32,7 @@
   font-size: 30px;
   margin-right: 8px;
   cursor: pointer;
+  color: rgba(91, 188, 192);
 }
 .headerItem1LogoSmall {
   /* margin-left: 12px; */
@@ -95,6 +96,7 @@
   margin-right: 8px;
   cursor: pointer;
   display: none;
+  color: rgba(91, 188, 192);
 }
 .logAndSign {
   width: 100%;

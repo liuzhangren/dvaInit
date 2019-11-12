@@ -1,7 +1,5 @@
 import React from 'react'
-// import {
- 
-// } from 'antd'
+import logo from '../../assets/home-banner.png'
 import style from './index.css'
 
 export default class Banner extends React.Component {
@@ -15,7 +13,7 @@ export default class Banner extends React.Component {
   render() {
     return (
       <div className={style.bannerContainer}>
-        <img width='100%' height='520px' src='https://www.marinedigitalrepublic.com/images/home-banner.png'></img>
+        <img width='100%' height='520px' src={logo}></img>
       </div>
     )
   }
