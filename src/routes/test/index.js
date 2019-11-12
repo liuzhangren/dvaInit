@@ -1,39 +1,27 @@
 import React from 'react'
-import { Button } from 'antd'
-import { connect } from 'dva'
+import { Row, Col } from 'antd'
 
-@connect(({ test }) => ({
-  test
-}))
 
 export default class Test extends React.Component {
-  state = {}
+  constructor(props) {
+    super(props)
+    this.state = {
 
-  click() {
-    const { dispatch } = this.props
-    // dispatch({
-    //   type: 'test/fetchTest',
-    //   payload: {}
-    // })
-    dispatch({
-      type: 'test/testCors',
-      payload: {}
-    })
+    }
+  }
+  click(index) {
+    console.log(index)
   }
   render() {
+    const arr = [1, 2, 3, 4, 5]
     return (
-      <>
-        <h1>hello world</h1>
+      <div>
         {
-          this.props.test && this.props.test.list.reduce((r, c) => {
-            return [
-              ...r,
-              <div key={c.key}>名字: {c.name}/ 年龄: {c.age}</div>
-            ]
-          }, [])
+          arr.map(function(item, i) {
+            return <div onClick={this.click.bind(this, i)}>{item}</div>
+          })
         }
-        <Button type='primary' onClick={this.click.bind(this)} >点击</Button>
-      </>
+      </div>
     )
   }
 }

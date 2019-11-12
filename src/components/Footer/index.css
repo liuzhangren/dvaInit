@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  min-height: 300px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  color: #92929A;
+}
+.href {
+  margin-top: 2px;
+  font-size: 12px;
+}
+.itemNormal {
+  font-size: 12px;
+  width: 15%;
+  height: 160px;
+  /* border: 1px solid red; */
+  text-align: left;
+  cursor: pointer;
+}
+
+.itemSmall {
+  width: 40%;
+  height: 160px;
+  margin-top: 12px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  /* text-align: center; */
+}
+
+.copyNormal {
+  width: 100%;
+  text-align: center;
+}
+
+.copySmall {
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+}

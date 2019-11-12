@@ -1,0 +1,175 @@
+.headerContainer {
+  width: 100%;
+  /* padding: 15px 15px 0 15px; */
+  display: flex;
+}
+
+.verticalItem {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  padding-left: 12px;
+}
+
+.verticalItem:hover {
+  background-color: rgba(238, 240, 240);
+}
+.verticalItem:visited {
+  background-color: rgba(238, 240, 240);
+}
+/* small */
+.headerItem1Small {
+  min-height: 60px;
+  padding: 4px;
+  width: 50%;
+  /* border: 1px solid grey; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.headerItem1IconSmall {
+  font-size: 30px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.headerItem1LogoSmall {
+  /* margin-left: 12px; */
+}
+.headerItem2Small {
+  min-height: 60px;
+  width: 60%;
+  /* border: 1px solid grey; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+.cardSmall {
+
+}
+.headerItem3Small {
+  min-height: 60px;
+  width: 50%;
+  padding: 8px;
+  /* border: 1px solid grey; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.headerItem3Btn1Small {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer;
+  /* background-color: rgba(91, 188, 192) */
+  display: none;
+}
+.headerItem3Btn2Small {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(91, 188, 192)
+}
+
+
+/* normal */
+.headerItem1Normal {
+  min-height: 60px;
+  padding: 4px;
+  width: 20%;
+  /* border: 1px solid grey; */
+  display: flex;
+  margin-left: 30px;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+.headerItem1IconNormal {
+  font-size: 30px;
+  margin-right: 8px;
+  cursor: pointer;
+  display: none;
+}
+.logAndSign {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  color: rgb(43, 184, 192);
+}
+.log {
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 1px;
+  cursor: pointer;
+  border: 1px solid rgb(223, 227, 228);
+}
+.log:hover {
+  background-color: rgba(238, 240, 240);
+}
+.sign:hover {
+  background-color: rgba(238, 240, 240);
+}
+.sign {
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 1px;
+  border: 1px solid rgb(223, 227, 228);
+}
+.headerItem1LogoNormal {
+  /* margin-left: 12px; */
+  text-align: center;
+}
+.headerItem2Normal > a {
+  color: rgb(53, 56, 58);
+  font-size: 14px;
+  font-family: "Gotham A","Gotham B";
+  font-weight: 400;
+}
+.headerItem2Normal > a:hover {
+  color: black;
+}
+.headerItem2Normal {
+  min-height: 60px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.headerItem3Normal {
+  min-height: 60px;
+  width: 20%;
+  padding: 8px;
+  /* border: 1px solid grey; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+.headerItem3Btn1Normal {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer;
+  margin-right: 8px;
+  /* background-color: rgba(91, 188, 192) */
+}
+.headerItem3Btn2Normal {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(91, 188, 192)
+}
