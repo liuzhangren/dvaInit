@@ -8,9 +8,6 @@ import 'antd/dist/antd.css'
 const Routers = function ({ history, app }) {
   history.listen((location)=>{
     switch (location.pathname) {
-      case '/test':
-        document.title = '测试'
-        break
       case '/':
         document.title = '主页'
         break
@@ -25,11 +22,6 @@ const Routers = function ({ history, app }) {
       path: '/',
       models: () => [import('./models/example')],
       component: () => import('./routes/IndexPage'),
-    },
-    {
-      path: '/test',
-      models: () => [import('./models/test')],
-      component: () => import('./routes/test'),
     }
   ]
 

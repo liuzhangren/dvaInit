@@ -87,7 +87,7 @@ export default class Header extends React.Component {
                 onClick={this.showVerticalMenu.bind(this)}
               />
             }
-            <img className={style[`headerItem1Logo${size}`]} width='50px' src={logo}></img>
+            <img alt='logo' className={style[`headerItem1Logo${size}`]} width='50px' src={logo}></img>
             <div style={{
               fontSize: '30px'
             }} >M.D.R</div>

@@ -1,7 +1,7 @@
 import React from 'react'
-import {
-  Icon
-} from 'antd'
+// import {
+//   Icon
+// } from 'antd'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import ContentOne from '../components/ContentOne'
@@ -9,7 +9,7 @@ import ContentTwo from '../components/ContentTwo'
 import ContentThree from '../components/ContentThree'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
-import card from '../assets/card.jpg'
+// import card from '../assets/card.jpg'
 import style from './index.css'
 export default class Index extends React.Component {
   constructor(props) {
@@ -46,7 +46,7 @@ export default class Index extends React.Component {
   }
   
   render() {
-    const { size } = this.state
+    // const { size } = this.state
     return (
       <div className={style.totalContainer}>
         <Header />

@@ -13,7 +13,7 @@ export default class Banner extends React.Component {
   render() {
     return (
       <div className={style.bannerContainer}>
-        <img width='100%' height='520px' src={logo}></img>
+        <img alt='banner' width='100%' height='520px' src={logo}></img>
       </div>
     )
   }
