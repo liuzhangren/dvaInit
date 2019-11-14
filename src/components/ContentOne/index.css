@@ -11,16 +11,14 @@
   width: 100%;
   min-height: 600px;
   text-align: center;
-  /* line-height: 600px; */
-  /* border: 1px solid grey; */
   display: flex;
   flex-wrap: wrap-reverse;
   position: relative;
   justify-content: center;
-  /* align-items: center; */
+  padding: 0 5vw;
 }
 .imgSmall {
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 .leftSmall {
   width: 100%;
@@ -38,18 +36,21 @@
 }
 
 .leftTitleSmall {
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: 400;
   height: 25%;
   color: rgb(30, 156, 159);
-  text-align: left;
   /* line-height: 370px; */
-  font-family: 'Raleway,sans-serif';
+  font-family: 'Raleway';
   padding: 24px;
+  text-align: center;
 }
 
 .leftContentSmall {
   padding: 24px;
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(53, 56, 58);
   text-align: left;
   height: 25%;
   /* line-height: 300px; */
@@ -88,34 +89,50 @@
   flex-wrap: wrap;
 }
 
-.line {
+.lineNormal {
+  width: 100px;
+  height: 0;
+  border-bottom: 1px solid #dad7d7;
+  position: absolute;
+  bottom: 340px;
+  left: 12px;
+}
+
+.lineSmall {
   width: 100px;
   height: 0;
   border-bottom: 1px solid grey;
-  position: absolute;
-  bottom: 340px;
-  left: 20px;
+  margin: 0 auto;
 }
+
 .imgNormal {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .leftTitleNormal {
-  font-size: 32px;
   height: 300px;
+  font-size: 24px;
+  font-weight: 400;
   color: rgb(30, 156, 159);
+  /* line-height: 370px; */
+  font-family: 'Raleway';
   text-align: left;
   line-height: 370px;
-  font-family: 'Raleway,sans-serif';
   padding: 12px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.004);
+  text-rendering: optimizeLegibility!important;
 }
 
 .leftContentNormal {
   padding: 12px;
   font-size: 20px;
+  font-weight: 300;
   text-align: left;
   height: 300px;
   /* line-height: 300px; */
   vertical-align: middle;
+  color: rgb(53, 56, 58);
+  text-shadow: 1px 1px 1px rgba(0,0,0,.004);
+  text-rendering: optimizeLegibility!important;
 }
 
 .rightNormal {

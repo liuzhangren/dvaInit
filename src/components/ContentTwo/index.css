@@ -10,7 +10,7 @@
 }
 
 .contentNormal {
-  width: 1000px;
+  width: 100%;
   min-height: 600px;
   text-align: center;
   /* line-height: 720px; */
@@ -23,8 +23,8 @@
 }
 
 .contentItemNormal {
-  width: 400px;
-  height: 100%;
+  width: 40%;
+  /* height: 100%; */
   /* border: 1px solid red; */
   padding: 25px;
   background-color: rgb(255, 255, 255);
@@ -32,6 +32,26 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(223, 227, 228);
+  border-image: initial;
+}
+
+.contentItemSmall {
+  width: 400px;
+  /* height: 100%; */
+  /* border: 1px solid red; */
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  margin: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(223, 227, 228);
+  border-image: initial;
 }
 
 .introduce {
@@ -58,12 +78,10 @@
   line-height: 35px;
   color: white;
   text-align: center;
+  margin-left: 7.5%;
+  margin-top: 2.5%;
   cursor: pointer;
   background-color: rgba(91, 188, 192);
-  /* margin-left: 49%; */
-  position: absolute;
-  bottom: -40px;
-  left: 52px;
 }
 
 .investBtnSmall {
@@ -71,7 +89,7 @@
   height: 35px;
   line-height: 35px;
   color: white;
-  text-align: center;
+  /* text-align: center; */
   cursor: pointer;
   background-color: rgba(91, 188, 192);
   margin: 40px auto 0;
@@ -89,3 +107,10 @@
   display: flex;
 }
 
+.testBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}

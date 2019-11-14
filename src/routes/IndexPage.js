@@ -22,11 +22,13 @@ export default class Index extends React.Component {
     window.addEventListener('resize', this.handleResize.bind(this))
     if(window.innerWidth < 750) {
       this.setState({
-        size: 'Small'
+        size: 'Small',
+        width: window.innerWidth 
       })
     }else {
       this.setState({
-        size: 'Normal'
+        size: 'Normal',
+        width: window.innerWidth
       })
     }
   }
@@ -36,11 +38,13 @@ export default class Index extends React.Component {
   handleResize(e) {
     if(e.target.innerWidth < 750) {
       this.setState({
-        size: 'Small'
+        size: 'Small',
+        width: e.target.innerWidth
       })
     }else {
       this.setState({
-        size: 'Normal'
+        size: 'Normal',
+        width: e.target.innerWidth
       })
     }
   }
@@ -48,7 +52,9 @@ export default class Index extends React.Component {
   render() {
     // const { size } = this.state
     return (
-      <div className={style.totalContainer}>
+      <div className={style.totalContainer} style={{
+        width: `${this.state.width}px`
+      }}>
         <Header />
         <Banner />
         <Card />

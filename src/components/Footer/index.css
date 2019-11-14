@@ -4,7 +4,7 @@
   background-color: black;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 15px;
@@ -13,11 +13,14 @@
   font-weight: 400;
   font-size: 14px;
   color: #92929A;
+  margin-left: 15%;
 }
 .href {
   margin-top: 2px;
   font-size: 12px;
+  margin-left: 15%
 }
+
 .itemNormal {
   font-size: 12px;
   width: 15%;
@@ -26,7 +29,11 @@
   text-align: left;
   cursor: pointer;
 }
-
+.line {
+  width: 80%;
+  height: 0;
+  border: 1px solid grey;
+}
 .itemSmall {
   width: 40%;
   height: 160px;

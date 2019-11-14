@@ -10,6 +10,9 @@
   line-height: 32px;
   cursor: pointer;
   padding-left: 12px;
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
 }
 
 .verticalItem:hover {
@@ -22,7 +25,7 @@
 .headerItem1Small {
   min-height: 60px;
   padding: 4px;
-  width: 50%;
+  width: 62%;
   /* border: 1px solid grey; */
   display: flex;
   align-items: center;
@@ -31,6 +34,7 @@
 .headerItem1IconSmall {
   font-size: 30px;
   margin-right: 8px;
+  margin-left: 8px;
   cursor: pointer;
   color: rgba(91, 188, 192);
 }

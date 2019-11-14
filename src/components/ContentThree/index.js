@@ -43,12 +43,12 @@ export default class ContentThree extends React.Component {
     const { size } = this.state
     return (
       <div className={style.container}>
-        <div className={style[`content${size}`]}>
+        <div className={style[`contentAll${size}`]}>
           <div className={style[`contentLeft${size}`]}>
             <div className={style[`title${size}`]}>
               The MDR Wallet
             </div>
-            <div className={style.content}>
+            <div className={style[`content${size}`]}>
               Marine Digital Republic is a decentralized app and web platform that operates using the state-of-the-art blockchain infrastructure technology. Users can upload USD to purchase MDRX, a simple stablecoin always equal in value to one US dollar. From there, MDRX may be used to purchase pieces of specific ships in whatever quantity the user wishes.
             </div>
             <div className={style[`start${size}`]}>

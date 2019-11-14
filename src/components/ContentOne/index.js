@@ -42,10 +42,10 @@ export default class ContentOne extends React.Component {
       <div className={style.container}>
         <div className={style[`content${size}`]}>
           <div className={style[`left${size}`]}>
-            <div className={style[`leftTitle${size}`]}>A New Investment Option</div>
-            <div style={{
-              display: size === 'Small'?'none':'block'
-            }} className={style.line}></div>
+            <div className={style[`leftTitle${size}`]}>
+              <span>A New Investment Option</span>
+            </div>
+            <div className={style[`line${size}`]}></div>
             <div className={style[`leftContent${size}`]}>Investments at MDR differ from other platforms in that all its investments are backed by real-world dollars and shipping assets</div>
           </div>
           <div className={style[`right${size}`]}>

@@ -5,25 +5,42 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 36px;
   /* background-color: rgb(247, 250, 251); */
 }
 
-.contentNormal {
+.contentAllNormal {
   width: 80%;
-  min-height: 480px;
+  /* min-height: 480px; */
   text-align: center;
-  /* border: 1px solid grey; */
   display: flex;
-  /* justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative; */
+  font-size: 18px;
+  line-height: 30px;
+  /* margin-bottom: 45px; */
+  font-weight: 300;
+  font-family: "Gotham A", "Gotham B";
+  text-align: left;
 }
 
+.contentAllSmall {
+  text-align: center;
+  display: flex;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: "Gotham A", "Gotham B";
+  text-align: left;
+  flex-wrap: wrap-reverse;
+}
+.contentNormal {
+  
+}
 .contentLeftNormal {
-  width: 66.66%;
-  height: 480px;
-  /* border: 1px solid red; */
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 24px;
   /* display: flex;
   justify-content: center;
@@ -33,7 +50,7 @@
 
 .contentLeftSmall {
   width: 100%;
-  height: 480px;
+  /* height: 480px; */
   /* border: 1px solid red; */
   padding: 24px;
   /* display: flex;
@@ -45,8 +62,9 @@
 .titleNormal {
   font-size: 32px;
   font-family: 'Raleway';
-  margin-bottom: 22px;
-  margin-top: 120px;
+  margin-bottom: 8px;
+  /* margin-bottom: 22px;
+  margin-top: 120px; */
 }
 
 .titleSmall {
@@ -54,16 +72,7 @@
   font-family: 'Raleway';
   margin-bottom: 22px;
   margin-top: 70px;
-}
-
-.contentNorMal {
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 45px;
-  margin-top: 24px;
-  font-weight: 300;
-  text-align: left;
-  font-family: "Gotham A", "Gotham B";
+  text-align: center;
 }
 
 .contentSmall {
@@ -75,6 +84,7 @@
   font-family: "Gotham A", "Gotham B";
   display: flex;
   flex-wrap: wrap-reverse;
+  padding: 0 5vw;
 }
 
 .startNormal {
@@ -84,7 +94,7 @@
   color: white;
   text-align: center;
   cursor: pointer;
-  margin-top: 60px;
+  margin-top: 10px;
   background-color: rgba(91, 188, 192);
 }
 .startSmall {
@@ -95,43 +105,27 @@
   text-align: center;
   cursor: pointer;
   background-color: rgba(91, 188, 192);
-  margin: 24px auto;
+  margin: 0 auto;
 }
 
 .contentRightNormal {
-  width: 33.3%;
-  height: 480px;
+  width: 50%;
+  height: 500px;
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .contentRightSmall {
   width: 100%;
-  height: 480px;
+  height: 400px;
   /* border: 1px solid grey; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contentSmall {
-  width: 100%;
-  min-height: 480px;
-  text-align: center;
-  /* line-height: 720px; */
-  /* border: 1px solid grey; */
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative; */
-}
-
-.contentLeftSmall {
-
-}
 
 .contentRightSmall {
   display: flex;
