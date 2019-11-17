@@ -9,10 +9,10 @@ const Routers = function ({ history, app }) {
   history.listen((location)=>{
     switch (location.pathname) {
       case '/':
-        document.title = '主页'
+        document.title = '船舶资产交易数字化平台'
         break
       default:
-        document.title = 'dva'
+        document.title = '船舶资产交易数字化平台'
         break
     }
   })
