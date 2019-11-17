@@ -1,6 +1,7 @@
 .container {
   width: 100%;
   background-image: url('https://www.yieldstreet.com/static/media/bkg-low.265be09b.jpg');
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,7 +1,7 @@
 import React from 'react'
-import {
-  Icon
-} from 'antd'
+// import {
+//   Icon
+// } from 'antd'
 import qrcode from '../../assets/qrcode.png'
 import style from './index.css'
 import wechat from '../../assets/weixin.png'
