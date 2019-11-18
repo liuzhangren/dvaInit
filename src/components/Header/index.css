@@ -70,6 +70,7 @@
   height: 35px;
   line-height: 35px;
   cursor: pointer;
+  color: black;
   /* background-color: rgba(91, 188, 192) */
   display: none;
 }
@@ -168,6 +169,7 @@
   height: 35px;
   line-height: 35px;
   cursor: pointer;
+  color: black;
   margin-right: 8px;
   /* background-color: rgba(91, 188, 192) */
 }

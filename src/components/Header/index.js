@@ -1,10 +1,26 @@
 import React from 'react'
 import {
-  Icon
+  Icon,
+  Menu, 
+  Dropdown
 } from 'antd'
 import logo from '../../assets/logo.png'
 import style from './index.css'
-
+import { Link } from 'dva/router'
+import CONST from '../../const'
+const { 
+  SIGNUP,
+  LOGIN,
+  HOWTOLOGIN,
+  HOWTORECHARGE,
+  HOWTOPAY,
+  HOWTOBUY,
+  ABOUTMDR,
+  ABOUTSTO,
+  ABOUTMARINE,
+  MARKET,
+  EXCHANGE
+ } = CONST
 export default class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -50,9 +66,11 @@ export default class Header extends React.Component {
       visible: false
     })
   }
+  jumpTo(href) {
+    window.location.href = href
+  }
   render() {
     const { size } = this.state
-    // console.log(`headerItem1${size}`)
     const verticalStyl = this.state.visible? {
       width: '280px',
       height: `${window.innerHeight}px`,
@@ -70,6 +88,43 @@ export default class Header extends React.Component {
       left: 0,
       display: 'none'
     }
+    const menuHelp = (
+      <Menu>
+        <Menu.Item key='0'>
+          <a href={HOWTOLOGIN}>如何登录/注册</a>
+        </Menu.Item>
+        <Menu.Item key='1'>
+          <a href={HOWTORECHARGE}>如何充值/提现</a>
+        </Menu.Item>
+        <Menu.Item key='2'>
+          <a href={HOWTOPAY}>如何买入/卖出</a>
+        </Menu.Item>
+        <Menu.Item key='3'>
+          <a href={HOWTOBUY}>如何买入申购新股</a>
+        </Menu.Item>
+      </Menu>
+    )
+    const menu = (
+      <Menu>
+        <Menu.Item key='0'>
+          <a href={ABOUTMDR}>About MDR</a>
+        </Menu.Item>
+
+        <Menu.Item key='1'>
+          <a href={ABOUTSTO}>About STO</a>
+        </Menu.Item>
+
+        <Menu.Item key='2'>
+          <a href={ABOUTMARINE}>About Marine</a>
+        </Menu.Item>
+
+        <Menu.Item style={{display: 'flex', justifyContent: 'space-arround', alignItems: 'center'}} key='3'>
+          <Dropdown overlay={menuHelp} placement="bottomLeft" trigger={['hover']}>
+            <a style={{width: '100%'}}>Help</a>
+          </Dropdown>
+        </Menu.Item>
+      </Menu>
+    )
     return (
       <>
         <div className={style.headerContainer}>
@@ -105,33 +160,36 @@ export default class Header extends React.Component {
             </div>
           </div>
           <div className={style[`headerItem2${size}`]}>
-            <a>Investment Offering</a>
-            <a>Exchange</a>
-            <a>Market information</a>
-            <a>About Us</a>
-            <a>Existing Shipowners</a>
-            <a>Help</a>
+            <Link to='/'>Home</Link>
+            <a href={MARKET}>Market Information</a>
+            <a href={EXCHANGE}>Exchange</a>
+            <Dropdown overlay={menu} trigger={['click']}>
+              <a>About Us</a>
+            </Dropdown>
+            {/* <a>Existing Shipowners</a>
+            <a>Help</a> */}
           </div>
           <div className={style[`headerItem3${size}`]}>
-            <div className={style[`headerItem3Btn1${size}`]}>Log In</div>
-            <div className={style[`headerItem3Btn2${size}`]}>Sign Up</div>
+            <a href={LOGIN} className={style[`headerItem3Btn1${size}`]}>Log In</a>
+            <div onClick={this.jumpTo.bind(this, LOGIN)} className={style[`headerItem3Btn2${size}`]}>Sign Up</div>
           </div>
         </div>
         <div style={verticalStyl}>
           <div className={style.logAndSign}>
-            <div className={style.log}>
+            <div onClick={this.jumpTo.bind(this, LOGIN)} className={style.log}>
               Log In
             </div>
-            <div className={style.sign}>
+            <div onClick={this.jumpTo.bind(this, LOGIN)} className={style.sign}>
               Sign Up
             </div>
           </div>
-          <div className={style.verticalItem}>Investment Offering</div>
-          <div className={style.verticalItem}>Exchange</div>
-          <div className={style.verticalItem}>Market information</div>
-          <div className={style.verticalItem}>About Us</div>
-          <div className={style.verticalItem}>Existing Shipowners</div>
-          <div className={style.verticalItem}>Help</div>
+          <div onClick={this.jumpTo.bind(this, 'https://www.marinedigitalrepublic.com/#/')} className={style.verticalItem}>HOME</div>
+          <div onClick={this.jumpTo.bind(this, EXCHANGE)} className={style.verticalItem}>Exchange</div>
+          <div onClick={this.jumpTo.bind(this, MARKET)} className={style.verticalItem}>Market information</div>
+          <div onClick={this.jumpTo.bind(this, ABOUTMDR)} className={style.verticalItem}>About MDR</div>
+          <div onClick={this.jumpTo.bind(this, ABOUTSTO)} className={style.verticalItem}>About STO</div>
+          <div onClick={this.jumpTo.bind(this, ABOUTMARINE)} className={style.verticalItem}>About Marine</div>
+          <div onClick={this.jumpTo.bind(this, HOWTOLOGIN)} className={style.verticalItem}>Help</div>
         </div>
       </>
     )

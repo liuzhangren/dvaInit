@@ -59,8 +59,9 @@
   /* height: 250px; */
   padding: 12px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
 }
 
 .introduceTitle {

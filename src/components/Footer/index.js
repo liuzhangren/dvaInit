@@ -42,35 +42,38 @@ export default class Footer extends React.Component {
       })
     }
   }
+  jump(href) {
+    window.location.href = href
+  }
   render() {
     const { size } = this.state
     return (
       <div className={style.container}>
         <div className={style[`item${size}`]}>
           <span className={style.title}>Terms of Service</span>
-          <div className={style.href}>User Agreement</div>
-          <div className={style.href}>Privacy Policy</div>
-          <div className={style.href}>Legal Statement</div>
-          <div className={style.href}>Regulations of AML&ATF</div>
-          <div className={style.href}>Free</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/login')} className={style.href}>User Agreement</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/privacy-policy')}className={style.href}>Privacy Policy</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/statement')} className={style.href}>Legal Statement</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/user-guide')} className={style.href}>Regulations of AML&ATF</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/fee-instruction')} className={style.href}>Free</div>
         </div>
         <div className={style[`item${size}`]}>
           <span className={style.title}>Join Us</span>
-          <div className={style.href}>Recruitment</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/requirements')} className={style.href}>Recruitment</div>
         </div>
         <div className={style[`item${size}`]}>
           <span className={style.title}>Announcement</span>
-          <div className={style.href}>About MDR</div>
-          <div className={style.href}>About STO</div>
-          <div className={style.href}>About Marine</div>
-          <div className={style.href}>Partners</div>
-          <div className={style.href}>Contact Us</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/aboutmdr')} className={style.href}>About MDR</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/aboutsto')} className={style.href}>About STO</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/aboutmarinemarket')} className={style.href}>About Marine</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/partners')} className={style.href}>Partners</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/contactus')} className={style.href}>Contact Us</div>
         </div>
         <div className={style[`item${size}`]}>
           <span className={style.title}>Declaration</span>
-          <div className={style.href}>Announcement</div>
-          <div className={style.href}>STO Application</div>
-          <div className={style.href}>Help</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/announcement')} className={style.href}>Announcement</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/user-sign')} className={style.href}>STO Application</div>
+          <div onClick={this.jump.bind(this, 'https://lcr.marinedigitalrepublic.com/helpcenter')} className={style.href}>Help</div>
         </div>
         <div className={style[`item${size}`]}>
           <span className={style.title}>Official Media</span>
