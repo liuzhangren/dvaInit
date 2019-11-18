@@ -39,6 +39,9 @@ export default class ContentThree extends React.Component {
       })
     }
   }
+  jumpTo(href) {
+    window.location.href = href
+  }
   render() {
     const { size } = this.state
     return (
@@ -51,7 +54,7 @@ export default class ContentThree extends React.Component {
             <div className={style[`content${size}`]}>
               Marine Digital Republic is a decentralized app and web platform that operates using the state-of-the-art blockchain infrastructure technology. Users can upload USD to purchase MDRX, a simple stablecoin always equal in value to one US dollar. From there, MDRX may be used to purchase pieces of specific ships in whatever quantity the user wishes.
             </div>
-            <div className={style[`start${size}`]}>
+            <div onClick={this.jumpTo.bind(this, 'https://lcr.marinedigitalrepublic.com/login')} className={style[`start${size}`]}>
               Get Started &nbsp;&nbsp;
               <Icon type="arrow-right" />
             </div>

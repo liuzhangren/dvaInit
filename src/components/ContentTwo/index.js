@@ -39,6 +39,9 @@ export default class ContentOne extends React.Component {
       })
     }
   }
+  jumpTo(href) {
+    window.location.href = href
+  }
   render() {
     const { size } = this.state
     return (
@@ -106,7 +109,7 @@ export default class ContentOne extends React.Component {
           <div style={{
             width:'100%'
           }}>
-            <div className={style[`investBtn${size}`]}>Invest Now</div>
+            <div onClick={this.jumpTo.bind(this, 'https://lcr.marinedigitalrepublic.com/login')} className={style[`investBtn${size}`]}>Invest Now</div>
           </div>
           
         </div>
